@@ -24,12 +24,12 @@ button.addEventListener("click",function(){
         const newISBN = document.createElement("th");
         newISBN.innerHTML = isbnInput.value;
         bookListRow.appendChild(newISBN);
-
+//Appending all data to Table
         bookList.appendChild(bookListRow);
-
-// Reset input fields
-titleInput.value = "";
-authorInput.value = "";
-isbnInput.value = "";
+//Resetting Input Fields
+titleInput.value="";
+authorInput.value="";
+isbnInput.value="";
     }
 })
+
