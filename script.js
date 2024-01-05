@@ -26,6 +26,15 @@ button.addEventListener("click",function(){
         bookListRow.appendChild(newISBN);
 //Appending all data to Table
         bookList.appendChild(bookListRow);
+
+        const newButton= document.createElement("button");
+        newButton.classList.add("btn-grad");
+        newButton.innerHTML="Delete";
+        bookListRow.appendChild(newButton);
+        
+        newButton.addEventListener('click',()=>{
+                bookListRow.remove();
+        })
 //Resetting Input Fields
 titleInput.value="";
 authorInput.value="";
